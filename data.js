@@ -17,17 +17,17 @@ function randomColumnColor() {
     '#FF00CC',
     '#FF00CC'
   ];
-  var i = Math.floor(Math.random() * background_colors.length); 
+  var i = Math.floor(Math.random() * background_colors.length);
   return background_colors[i];
 }
 
 function randomBackgroundColor() {
   background_colors = [
-    'black',
-    'white',
-    '#333'
+    '#FF00CC',
+    '#EE34D2',
+    '#FFFF66'
   ];
-  var i = Math.floor(Math.random() * background_colors.length); 
+  var i = Math.floor(Math.random() * background_colors.length);
   return background_colors[i];
 }
 
@@ -74,7 +74,6 @@ function randomDog() {
       image: 'https://scontent-ort2-2.cdninstagram.com/t51.2885-15/e35/18580614_459447704391612_3858491631091056640_n.jpg'
     }
   ];
-  var i = Math.floor(Math.random() * dogs.length); 
+  var i = Math.floor(Math.random() * dogs.length);
   return dogs[i];
 }
-

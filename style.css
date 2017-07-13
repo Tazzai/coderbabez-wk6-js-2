@@ -1,22 +1,10 @@
 body {
   font-family: Arial, sans-serif;
 }
-header {
-  background-size: cover;
-  height: 200px;
-
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-
-  text-align: center;
-}
 
 #header {
-  background: white;
+  display: flex;
+  justify-content: space-between;
   color: #FFF;
   margin-bottom: 10px;
 }
@@ -48,7 +36,7 @@ button:active {
 }
 
 #funhouse section {
-  width: 33.33%;
+  width: 25%;
   padding: 10px;
   text-align: center;
 }

@@ -3,15 +3,15 @@ $("document").ready(function() {
   // There is no content specified in the html so the page would
   // be empty if we didn't update it here.
   // Try commenting out these lines and refreshing the page!
-  updateColumn(1);
-  updateColumn(2);
-  updateColumn(3);
+  updateAllColumn();
 
   $("#changeButton").click(function() {
-    updateColumn(1);
-    updateColumn(2);
-    updateColumn(3);
+    updateAllColumn();
   });
+
+  $("#changeButtonBackgroundColor").click(function() {
+    $("body").css('background-color', randomBackgroundColor());
+    });
 });
 
 function updateColumn(number) {
@@ -20,4 +20,11 @@ function updateColumn(number) {
   dog = randomDog();
   $element.find('h3').html(dog.name);
   $element.find('img').attr('src', dog.image);
+}
+
+function updateAllColumn (){
+  updateColumn(1);
+  updateColumn(2);
+  updateColumn(3);
+  updateColumn(4);
 }
